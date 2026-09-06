@@ -53,7 +53,7 @@ def _train_worker(task, exp_name, region=REG_CN, **kwargs):
         logger.info(f"🔴 [子进程 PID: {os.getpid()}] 训练出错: {e}", flush=True)
         raise e
 
-def run_train_blocking(task, exp_name, region, **kwargs):
+def run_train_blocking(task, exp_name, region=REG_CN, **kwargs):
     """
     主进程调用的函数。
     功能：启动子进程 -> 阻塞等待 -> 返回结果

@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import os
+# 必须放在最前面！！在import qlib / mlflow之前
+os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
+
 import yaml
 import fire
 from loguru import logger
