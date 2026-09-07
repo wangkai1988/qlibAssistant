@@ -14,3 +14,4 @@ page/docs/score/
 /.idea
 .DS_Store
 /roll/catboost_info
+**/mlruns/filelock
