@@ -25,7 +25,7 @@ class DataCLI:
             return False
         return True
 
-    def update(self, proxy = "A"):
+    def update(self, proxy = "B"):
         """
         Update market data for the specified region
         """
